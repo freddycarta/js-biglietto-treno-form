@@ -1,11 +1,5 @@
 console.log ('js ok');
 
-const km = parseInt( prompt('Quanti km vuoi percorrere?', '100') )
-console.log(km);
-
-const age = parseInt ( prompt("quanti hanni hai?" , '27') )
-console.log(age);
-
 let ticket = (km * 0.21);
 console.log(ticket);
 
@@ -19,8 +13,10 @@ const finalTicket = document .getElementById('finalTicket')
 
 document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
 
-document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
+const button = document.getElementById('carica')
+button.addEventListener ("click", function() {
+    'km' = parseInt( prompt('Quanti km vuoi percorrere?', '100') )
+  
+})
 
-document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
 
-document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
