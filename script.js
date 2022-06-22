@@ -18,3 +18,9 @@ if(age > 65) {
 const finalTicket = document .getElementById('finalTicket')
 
 document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
+
+document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
+
+document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
+
+document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
