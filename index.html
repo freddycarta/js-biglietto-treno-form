@@ -8,47 +8,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    
 
 
 </head>
-<body>
-  <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <div class="container d-flex">
-        <div class="row align-items-start">
-          <div class="col">
-            <label for="name">Nome e cognome:</label><br>
-            <input type="text" name="name" id="name">
+<body class="body bg-danger">
+<div class="container">
+  <section id="form" class="m-3">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <hr />
+        <div class="row row-cols-md-3">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome e cognome</label>
+            <input type="text" class="form-control" id="name" value="antonio">
           </div>
-          <div class="col">
-            <label for="km">KMS:</label><br>
-            <input type="number" name="km" id="km">
+          <div class="mb-3">
+            <label for="kms" class="form-label">Kms</label>
+            <input type="number" class="form-control" id="kms" value="10">
           </div>
-          <div class="col">
-            <select class="form-select">
-              <option selected>Seleziona</option>
-              <option value="minor">Minor</option>
-              <option value="middle">Middle</option>
-              <option value="over65">Over65</option>
+          <div class="mb-3">
+            <label for="age" class="form-label">Età</label>
+            <select name="formselect" id="age">
+              <option value="maj">Maggiorenne</option>
+              <option value="min">Minorenne</option>
+              <option value="over">Over65</option>
             </select>
           </div>
-          <div class="col">
-            <button id="carica">Carica</button>
+        </div>
+      </div>
+      <div class="card-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-primary me-3" id="btnconfirm">Conferma</button>
+        <button type="button" class="btn btn-secondary" id="btncancel">Annulla</button>
+      </div>
+    </div>
+  </section>
+  <!-- class="m-3 d-none" -->
+  <section id="ticketsection" class="m-3">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Il tuo biglietto</h5>
+            <hr />
+            <h4 class="passenger">antonio</h4>
+            <div class="row row-cols-md-4">
+              <div class="col">
+                <h5>Tariffa</h5>
+                <div id="rate">Tariffa ordinaria</div>
+              </div>
+              <div class="col">
+                <h5>Car</h5>
+                <div id="car">2</div>
+              </div>
+              <div class="col">
+                <h5>Pnr</h5>
+                <div id="Pnr">5454</div>
+              </div>
+              <div class="col">
+                <h5>Prezzo</h5>
+                <div id="price">10 €</div>
+              </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-end">
+              <button class="btn btn-success" id="btnbuy">Conferma Acquisto</button>
+            </div>
           </div>
         </div>
-  <h1>Il tuo biglietto</h1>
-    <div class="container d-flex">
-      <div class="row align-items-start">
-        <div class="col">
-          Nome passeggero
-        </div>
-        <div class="col">
-          <p id="finalTicket"></p>
-        </div>
-      </div>  
+      </div>
+    </div>
+  </section>
+
+</div> 
     
-<script src="script.js"></script>
 
 
-    
+
+<script src="script.js"></script>   
 </body>
 </html>

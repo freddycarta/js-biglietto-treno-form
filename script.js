@@ -1,22 +1,48 @@
-console.log ('js ok');
+console.log ('js ok')
+// FORM
+const nameField = document.getElementById ('name')
+const kmsField = document.getElementById ('kms')
+const ageField = document.getElementById ('age')
+const btnconfirm = document.getElementById ('btnconfirm')
+const btncancel = document.getElementById ('btncancel')
+const btnbuy = document.getElementById ('btnbuy')
 
-let ticket = (km * 0.21);
-console.log(ticket);
+// TICKET
+const passengerElement = document.getElementById ('passenger')
+const rateElement = document.getElementById ('rate')
+const carElement = document.getElementById ('car')
+const pnrElement = document.getElementById ('pnr')
+const priceElement = document.getElementById ('price')
+const ticketSection = document.getElementById ('ticketsection')
 
-if(age > 65) {
-    ticket = (ticket - (ticket * 0.40))
-} else if (age < 18 ) {
-    ticket = (ticket - (ticket * 0.20));
-}
+btnconfirm .addEventListener('click', function(){
+    const nameValue = nameField.value;
+    const kmsValue = kmsField.value;
+    const ageValue = ageField.value;
+    console.log(nameValue, kmsValue, ageValue);
 
-const finalTicket = document .getElementById('finalTicket')
+    let ratename = 'Tariffa ordinaria';
+    let price = 0.21 * kmsValue;
+    
 
-document.getElementById('finalTicket').innerHTML = 'Il tuo biglietto costa'+''+ ticket +' '+ '€'
+    if (ageValue === 'min'){
+        price *= 0.8;
+        ratename= 'Tariffa minorenni';
+    } else if (ageValue === 'over'){
+        price *= 0.6;
+        ratename= 'Tariffa over 65';
+    }
 
-const button = document.getElementById('carica')
-button.addEventListener ("click", function() {
-    'km' = parseInt( prompt('Quanti km vuoi percorrere?', '100') )
-  
+    console.log(price, ratename);
+
+    passengerElement .innerText = nameValue;
+    rateElement .innerText = ratename;
+    carElement .innerText = '7';
+    pnrElement .innerText = '9494';
+    priceElement .innerText = '€' + ' '+ price;
+
+    // ticketSection.classList.remove('d-none')
 })
+
 
 
