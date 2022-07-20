@@ -21,27 +21,27 @@ btnconfirm .addEventListener('click', function(){
     const ageValue = ageField.value;
     console.log(nameValue, kmsValue, ageValue);
 
-    let ratename = 'Tariffa ordinaria';
+    let rateName = 'Tariffa ordinaria';
     let price = 0.21 * kmsValue;
     
 
     if (ageValue === 'min'){
         price *= 0.8;
-        ratename= 'Tariffa minorenni';
+        rateName= 'Tariffa minorenni';
     } else if (ageValue === 'over'){
         price *= 0.6;
-        ratename= 'Tariffa over 65';
+        rateName= 'Tariffa over 65';
     }
 
-    console.log(price, ratename);
+    console.log(price, rateName);
 
-    passengerElement .innerText = nameValue;
-    rateElement .innerText = ratename;
+    passengerElement .innerText = 'jjjj';
+    rateElement .innerText = rateName;
     carElement .innerText = '7';
     pnrElement .innerText = '9494';
     priceElement .innerText = '€' + ' '+ price;
 
-    // ticketSection.classList.remove('d-none')
+  // ticketSection.classList.remove('d-none')
 })
 
 
