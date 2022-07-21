@@ -35,7 +35,6 @@ btnconfirm .addEventListener('click', function(){
 
     console.log(price, rateName);
 
-    passengerElement.innerText = 'jjjj';
     rateElement.innerText = rateName;
     carElement.innerText = '7';
     pnrElement.innerText = '9494';
