@@ -39,7 +39,7 @@ btnconfirm .addEventListener('click', function(){
     rateElement.innerText = rateName;
     carElement.innerText = '7';
     pnrElement.innerText = '9494';
-    priceElement.innerText = '€' + ' '+ price;
+    priceElement.innerText = '€' + ' '+ price.toFixed(2)
 })
 
 
