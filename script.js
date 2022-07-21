@@ -35,13 +35,11 @@ btnconfirm .addEventListener('click', function(){
 
     console.log(price, rateName);
 
-    passengerElement .innerText = 'jjjj';
-    rateElement .innerText = rateName;
-    carElement .innerText = '7';
-    pnrElement .innerText = '9494';
-    priceElement .innerText = '€' + ' '+ price;
-
-  // ticketSection.classList.remove('d-none')
+    passengerElement.innerText = 'jjjj';
+    rateElement.innerText = rateName;
+    carElement.innerText = '7';
+    pnrElement.innerText = '9494';
+    priceElement.innerText = '€' + ' '+ price;
 })
 
 
