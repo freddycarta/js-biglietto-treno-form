@@ -37,8 +37,8 @@ btnconfirm .addEventListener('click', function(){
 
     passengerElement.innerText = nameValue;
     rateElement.innerText = rateName;
-    carElement.innerText = '7';
-    pnrElement.innerText = '9494';
+    carElement.innerText = '666';
+    pnrElement.innerText = '9 3/4';
     priceElement.innerText = '€' + ' '+ price.toFixed(2)
 })
 
